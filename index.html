@@ -1,0 +1,52 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="static/css/styles.css" />
+    <title>| Fun Game</title>
+  </head>
+  <body>
+    <div class="container-3">
+      <h2>Lets Play Rock-Paper-Scissor with Computer</h2>
+      <div id="instructions">click on image to select the option</div>
+      <div class="flex-box-rps" id="flex-box-rps-div">
+        <img
+          id="rock"
+          src="static/asserts/rock.png"
+          height="150"
+          width="150"
+          alt="rock"
+          onclick="rpsGame(this)"
+          title="rock"
+        />
+        <img
+          id="paper"
+          src="static/asserts/paper.png"
+          height="150"
+          width="150"
+          alt="paper"
+          onclick="rpsGame(this)"
+          title="paper"
+        />
+        <img
+          id="scissor"
+          src="static/asserts/scissor.png"
+          height="150"
+          width="150"
+          alt="scissor"
+          onclick="rpsGame(this)"
+          title="scissor"
+        />
+      </div>
+      <div id="flexbox-results"></div>
+    </div>
+  </body>
+  <script type="text/javascript" src="static/js/scrpts.js"></script>
+</html>
